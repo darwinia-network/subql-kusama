@@ -3,11 +3,11 @@ description: ""
 repository: "https://github.com/darwinia-network/subql"
 schema: ./schema.graphql
 network:
-  endpoint: wss://kusama.api.onfinality.io/public-ws
+  endpoint: wss://kusama-rpc.polkadot.io
 dataSources:
   - name: main
     kind: substrate/Runtime
-    startBlock: 9000000
+    startBlock: 10050000
     mapping:
       handlers:
         - handler: handleBlock
